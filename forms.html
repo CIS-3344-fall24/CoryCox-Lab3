@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 100%; /*looks cleaner this way*/
+            margin: 5px;
+            padding: 5px;
+        }
+
+        label {
+            display: block;
+            /* fixes issue where labels dont fall on new lines */
+        }
+
+        .smiley {
+            width: 80px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form action="lab3_3.html"><!--after all requirements are met and the submit button can be hit this leads to lab3-->
+            <label>Agree to fairness by checking the box
+                <input type="checkbox" required><!--requirement for submission-->
+            </label>
+            <label>
+                Pick your favorite color
+                <label><input type="color"><!--Uses color wheel to pick exact color-->
+                </label>
+                What is today's date
+                <label><input type="date"><!-- allows to pick date-->
+                </label>
+                <label>
+                    What is the time currently
+                    <input type="datetime-local"><!--user can choose time accordingly-->
+                </label>
+                <label>
+                    What's your email?
+                    <input type="email"><!--sending spam mail there, requires user to input email format-->
+                    required
+                </label>
+                <label>
+                    Choose a file
+                    <input type="file"><!--choose a file that you like-->
+                </label>
+
+                <input type="hidden"> <!--shows we can still use this element but hide it-->
+                <input type="image" src=hehe.jpg alt="Happy Image" class="smiley"><!--input of image because im happy-->
+                <label>
+                    Choose your birth month
+                    <input type="month"><!--allows user to choose exact month-->
+
+                </label>
+                <label>
+                    What's your favorite number
+                    <input type="number"><!--requires user to input a number-->
+                </label>
+                <label>
+                    Type your password
+                    <input type="password" required><!--frontend encrypts the password-->
+                </label>
+                <label>
+                    Choose an animal
+                    <input type="radio" name="rdio">Cat <!--same name allows user only picks one-->
+                    <input type="radio" name="rdio">Dog
+                    <input type="radio" name="rdio">Koala
+                </label>
+                <label>
+                    How do you feel relative to this scale
+                    <input type="range"><!--allows user to pick from wide range-->
+                </label>
+                <label>
+                    Reset scale
+                    <input type="reset"><!--resets the range-->
+                </label>
+                <label>
+                    Search
+                    <input type="search"><!--can be used to search through a database when provided-->
+                </label>
+                <label>
+                    What's your phone number
+                    <input type="tel"><!--format requires phone number-->
+                </label>
+                <label>
+                    Type your name
+                    <input type="text"><!--text formating requires text-->
+                </label>
+                <label for="colors">Pick a color
+                </label>
+                <input type="colors" id="colors" name="colors" list="color-options">
+                <datalist id="color-options"> <!-- list must match id for datalist from input-->
+                    <option value="Blue">
+                    <option value="Red">
+                    <option value="Green"><!--listed out values for the options of datalist-->
+                </datalist>
+                <label>
+                    <input type="button" value="Big Button"><!--button without much use-->
+                </label>
+                <label>
+                    What time is your favorite class
+                    <input type="time" required><!--accepts the time-->
+                </label>
+                <label>
+                    Type your favorite website URL
+                    <input type="url"><!--accepts URL -->
+                </label>
+                <label>
+                    Select the week of finals
+                    <input type="week"><!--shows wide range of weeks for selection-->
+                </label>
+                <label>
+                    Next page to lab 3
+                    <input type="submit">
+                </label>
+        </form>
+</body>
+
+</html>

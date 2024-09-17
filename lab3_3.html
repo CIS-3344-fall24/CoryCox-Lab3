@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"><!--reference my style sheet-->
+    <style>
+        .main {
+            padding: 20px;/*looks cleaner adds space*/
+            color: rgb(41, 5, 5);
+        }
+
+        @media only screen and (max-width:600px) {
+
+            /* For Phones only */
+            .main {
+                background-color: red;
+                font-size: 30px;
+            }
+
+        }
+
+        @media only screen and (min-width:600px) {
+
+            /* For Portrait tablets and Large Phones */
+            .main {
+                background-color: aquamarine;
+                font-size: 20px;
+            }
+
+        }
+
+        @media only screen and (min-width:768px) {
+
+            /* For Tablets only */
+            .main {
+                background-color: rgba(59, 24, 187, 0.596);
+                font-size: 10px;
+            }
+        }
+
+        @media only screen and (min-width:992px) {
+
+            /* For laptops/desktops */
+            .main {
+                background-color: rgb(230, 154, 179);
+                font-size: 40px;
+            }
+        }
+
+        @media only screen and (min-width:1200px) {
+            .main {
+                background-color: rgb(184, 255, 18);
+                font-size: 60px;
+            }
+        }
+    </style>
+    <title>Document</title>
+    <h2>Media Query Working Example.</h2>
+</head>
+
+<body>
+    <p class="main">Responsive Web Design uses HTML and CSS to resize websites to make them look good on different
+        devices. This allows a programmer to include phones, tablets, etc into consideration for the creation of their
+        website. This is done automatically and adjusts the screen sizes and viewports. To start using RWD, use meta
+        name and set it equal to viewport</p>
+    <!-- first row -->
+    <div class="row">
+        <div class="col-4">Column: 1</div>
+        <div class="col-4">Column: 2</div>
+        <div class="col-4">Column: 3</div>
+    </div>
+    <!-- second row -->
+    <div class="row">
+        <div class="col-12">Column: 1</div> <!--100% column-->
+    </div>
+    <!-- third row -->
+    <div class="row">
+        <div class="col-6">Column: 1</div>
+        <div class="col-6">Column: 2</div>
+    </div>
+    <!-- fourth row -->
+    <div class="row">
+        <div class="col-1">Column: 1</div>
+        <div class="col-1">Column: 2</div>
+        <div class="col-1">Column: 3</div>
+        <div class="col-1">Column: 4</div>
+        <div class="col-1">Column: 5</div>
+        <div class="col-1">Column: 6</div>
+        <div class="col-1">Column: 7</div>
+        <div class="col-1">Column: 8</div>
+        <div class="col-1">Column: 9</div>
+        <div class="col-1">Column: 10</div>
+        <div class="col-1">Column: 11</div>
+        <div class="col-1">Column: 12</div> <!-- all 8.33% columns-->
+    </div>
+    <!-- fifth row -->
+    <div class="row">
+        <div class="col-3">Column: 1</div>
+        <div class="col-3">Column: 2</div>
+        <div class="col-3">Column: 3</div>
+        <div class="col-3">Column: 4</div><!--25% width columns so there are 4-->
+    </div>
+    <!--sixth row  -->
+    <div class="row">
+        <div class="col-2">Column: 1</div>
+        <div class="col-2">Column: 2</div>
+        <div class="col-2">Column: 3</div>
+        <div class="col-2">Column: 4</div>
+        <div class="col-2">Column: 5</div>
+        <div class="col-2">Column: 6</div>
+    </div>
+    <!-- seventh row -->
+    <div class="row">
+        <div class="col-6">Column: 1</div> <!--mixed up, has 50% width and 25% -->
+        <div class="col-3">Column: 2</div>
+        <div class="col-3">Column: 3</div>
+    </div>
+    <!-- eigth row -->
+    <div class="row">
+        <div class="col-1">Column: 1</div>
+        <div class="col-1">Column: 2</div>
+        <div class="col-1">Column: 3</div>
+        <div class="col-1">Column: 4</div>
+        <div class="col-1">Column: 5</div>
+        <div class="col-1">Column: 6</div>
+        <div class="col-3">Column: 7</div>
+        <div class="col-3">Column: 8</div>
+    </div>
+    <!-- ninth row -->
+    <div class="row">
+        <div class="col-1">Column: 1</div>
+        <div class="col-1">Column: 2</div>
+        <div class="col-1">Column: 3</div>
+        <div class="col-1">Column: 4</div>
+        <div class="col-2">Column: 5</div>
+        <div class="col-2">Column: 6</div>
+        <div class="col-2">Column: 7</div>
+        <div class="col-2">Column: 8</div>
+    </div>
+    <!-- tenth row -->
+    <div class="row">
+        <div class="col-9">Column: 1</div>
+        <div class="col-3">Column: 2</div>
+    </div>
+    <!-- eleventh row not fitting row -->
+    <div class="row">
+        <div class="col-5">Column: 1</div>
+        <div class="col-3">Column: 2</div>
+        <div class="col-3">Column: 3</div>
+        <div class="col-2">Column: 4</div> <!--does NOT fit and does not equate to 12-->
+    </div>
+</body>
+
+</html>

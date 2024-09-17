@@ -1,0 +1,69 @@
+/* used to even out the look of the website.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col-1 {
+    width: 8.33%;/*accepts 12 columns worth till fully wide*/
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;/*accepts one column before fully wide*/
+}
+/* this clears out the rows */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* styling for columns*/
+[class*="col-"] {
+    padding: 5px;
+    text-align: center;
+    background-color: lightgreen;
+    border: 2px solid rgb(39, 38, 38);
+    float: left;/*allows for the columns to go left to right */
+}
+
